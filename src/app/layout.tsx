@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+{
+  /* <script
+  type="text/javascript"
+  src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=%czzi9ktqey%"
+></script>; */
+}
 
 const inter = Inter({ subsets: ["latin"] });
 
