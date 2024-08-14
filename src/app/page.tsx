@@ -9,7 +9,7 @@ export default function Home() {
         strategy="beforeInteractive"
       />
       <h1 className="text-4xl font-bold text-blue-500 mb-4">
-        유어픽 위치 기반 서비스
+        {/* 유어픽 위치 기반 서비스 */}
       </h1>
       <div className="w-full h-96">
         <NaverMapComponent />

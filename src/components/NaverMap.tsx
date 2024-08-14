@@ -1,20 +1,21 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import { NaverMap, Marker, Container as MapDiv } from "react-naver-maps";
 import axios from "axios";
 
 const CENTER_COORDINATES = { lat: 37.5358994, lng: 126.8969627 };
 
-interface MarkerData {
+type MarkerData = {
   id: string;
   lat: number;
   lng: number;
   title: string;
-}
+};
 
 const NaverMapComponent: React.FC = () => {
   const [markers, setMarkers] = useState<MarkerData[]>([]);
-
+  console.log(markers);
   useEffect(() => {
     const fetchMarkers = async () => {
       try {
@@ -26,7 +27,6 @@ const NaverMapComponent: React.FC = () => {
         console.error("Error fetching markers:", error);
       }
     };
-
     fetchMarkers();
   }, []);
 
