@@ -137,7 +137,6 @@ const NaverMapComponent: React.FC = () => {
     }
   }, [markers, visibleTypes]);
 
-  // 마커 가시성 토글 함수
   const toggleMarkerVisibility = (type: string) => {
     setVisibleTypes((prev) =>
       prev.includes(type) ? prev.filter((t) => t !== type) : [...prev, type]
